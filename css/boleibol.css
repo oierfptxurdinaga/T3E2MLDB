@@ -1,0 +1,1262 @@
+/*//////////////////////////////////////////////////////////////////MENU NABIGATZAILEA SORTZEKO ETA DISEINUA EMATEKO//////////////////////////////////////////////////*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 218, 218);
+    background: linear-gradient(90deg, #b9a6ec, #a1d4de);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #2d2f98, #332580);
+    color: white;
+    justify-content: center;
+    padding-top: 15px;
+
+}
+
+.tituloa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    padding-top: 14px;
+}
+
+/* ================= NAV MEJORADO ================= */
+
+nav {
+    background: linear-gradient(90deg, #2d2f98, #332580);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1.5rem;
+    padding: 12px 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #7db9f5, #ffffff);
+    border-radius: 3px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+/* hover */
+nav ul a:hover {
+    color: #e6ecff;
+}
+
+nav ul a:hover::after {
+    width: 70%;
+}
+
+
+nav ul a.active::after {
+    width: 80%;
+}
+
+
+/* ======== RESPONSIVE HEADER ========= */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    nav ul a {
+        width: 90%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    nav ul a::after {
+        display: none; 
+    }
+}
+
+
+/*/////////////////// HASIERA DISEINUA ///////////////////////*/
+.portada-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.portada-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portada-content h1 {
+    font-size: 2.5rem;
+    color: #2b2f8f;
+    margin-bottom: 1rem;
+}
+
+.portada-content .intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.features li {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.cta {
+    font-weight: 600;
+    color: #3a3fa5;
+    font-size: 1.05rem;
+}
+
+
+.taldeak-main {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.taldeak-titulua {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #1f2a8a; 
+    margin: 60px 0 40px 60px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.taldeak-titulua span {
+    font-weight: 600;
+    color: #2c6fd6; 
+}
+
+.taldeak-titulua::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        #2c6fd6,
+        #7db9f5
+    );
+    border-radius: 2px;
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////// KLASIFIKAZIO ORRIA EGITEKO ////////////////////////////////////////////////////////////////// */
+/* Taularen kontenedorea */
+.tabla-contenedor {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    /* 🔹 Responsive: scroll horizontala */
+    background: white;
+}
+
+/* taula */
+.tabla-klasi {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+}
+
+.tabla-klasi th {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.tabla-klasi td {
+    padding: 14px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f0f2f5;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+/* zutabe espezifikoak */
+
+.pos-col {
+    width: 50px;
+}
+
+.team-col {
+    text-align: left;
+    min-width: 200px;
+}
+
+.points-col {
+    width: 60px;
+    font-weight: 700;
+}
+
+/* taularen barruko informazioa */
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-info img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.team-info span {
+    font-weight: 600;
+}
+
+/* posizioaren koloreak */
+tr.champions {
+    background-color: rgba(16, 185, 129, 0.05);
+    border-left: 4px solid #10b981;
+}
+
+tr.europa {
+    background-color: rgba(59, 130, 246, 0.05);
+    border-left: 4px solid #3b82f6;
+}
+
+tr.relegation {
+    background-color: rgba(239, 68, 68, 0.05);
+    border-left: 4px solid #ef4444;
+}
+
+
+/* Klasifikazioaren responsive */
+
+@media (max-width: 480px) {
+
+    /* Titulu nagusia gehiago txikitu */
+    .klasi_titulua {
+        font-size: 1.4rem;
+    }
+
+    /* Taula horizontalki mugi dadin */
+    .tabla-contenedor {
+        overflow-x: auto;
+    }
+
+    /* Ikonoak txikiagoak mugikorrean */
+    .team-info img {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Testu orokorra txikiago */
+    .tabla-klasi th,
+    .tabla-klasi td {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////// BERRIAK //////////////////////////////////////////////////////////////////*/
+.berriak-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.notizien-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Tarjeta de noticia */
+.notizia-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notizia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header de noticia */
+.notizia-header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notizia-category {
+    background: #006494;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.notizia-date {
+    color: #e1e6ed;
+    font-size: 0.9rem;
+}
+
+.notizia-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.notizia-title {
+    color: #1f3c56;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.notizia-summary p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.notizia-full {
+    margin-top: 1rem;
+}
+
+.notizia-full p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.notizia-image {
+    margin: 1.5rem 0;
+}
+
+.notizia-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #718096;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.notizia-stats {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #006494;
+}
+
+.notizia-stats h3 {
+    color: #2d3748;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.notizia-stats ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notizia-stats li {
+    padding: 0.3rem 0;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.notizia-stats li:last-child {
+    border-bottom: none;
+}
+
+.notizia-quote {
+    background: linear-gradient(135deg, rgba(0, 100, 148, 0.1), rgba(22, 9, 86, 0.05));
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #006494;
+}
+
+.notizia-quote blockquote {
+    font-size: 1.1rem;
+    color: #2d3748;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.notizia-quote cite {
+    color: #718096;
+    font-size: 0.9rem;
+    font-style: normal;
+    display: block;
+    text-align: right;
+}
+
+.notizia-actions {
+    padding: 1rem 1.5rem;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botones simplificados */
+.read-more-btn,
+.read-less-btn {
+    background: #006494;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    font-family: inherit;
+}
+
+.read-more-btn:hover,
+.read-less-btn:hover {
+    background: #004d73;
+}
+
+.read-less-btn {
+    background: #4a5568;
+}
+
+.read-less-btn:hover {
+    background: #2d3748;
+}
+
+/* Botón Erakutsi simplificado */
+#btnErakutsi {
+    background: #2d2f98;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+#btnErakutsi:hover {
+    background: #395abd;
+}
+
+/* Botón Ezkutatu simplificado */
+#bntEzkutatu {
+    background: #2d2f98;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+#bntEzkutatu:hover {
+    background: #395abd;
+}
+
+/* Responsive egiteko */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .notizien-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .berriak-container {
+        padding: 0 1rem 3rem;
+    }
+
+    .notizia-content {
+        padding: 1rem;
+    }
+
+    .notizia-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .notizien-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .notizien-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////////////////// */
+
+footer {
+    background: linear-gradient(90deg, #2d2f98, #332580);
+    color: white;
+    padding: 3rem 1.5rem 2rem;
+}
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+
+.footer-brand h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.footer-brand p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--soft);
+    line-height: 1.5;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #e6e9ff;
+}
+
+
+.footer-section p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    color: var(--soft);
+}
+
+
+.footer-divider {
+    margin: 2rem 0 1.5rem;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-social {
+    right: 2rem;
+    bottom: 2.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social img {
+    width: 45px;
+    height: 45px;
+    opacity: 0.85;
+}
+
+.footer-social a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+
+/*taldeak*/
+/* =============================== */
+/* ===== CONTENEDOR GENERAL ===== */
+/* =============================== */
+
+.talde_kont {
+    background: rgb(140, 190, 227);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 25px 20px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+}
+
+/* Hover efektua */
+.talde_kont:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* =============================== */
+/* ===== LOGOA ===== */
+/* =============================== */
+
+.talde_kont img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* =============================== */
+/* ===== TALDEAREN IZENA ===== */
+/* =============================== */
+
+.talde_kont h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #1f3c56;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* =============================== */
+/* ===== INFORMEZIOAREN LISTA ===== */
+/* =============================== */
+
+.talde_kont ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.talde_kont li {
+    font-size: 0.9rem;
+    color: #4a5568;
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+    line-height: 1.4;
+}
+
+/* Azken marra kendu */
+.talde_kont li:last-child {
+    border-bottom: none;
+}
+
+/* =============================== */
+/* ===== GRID-A (KANPOKOA) ===== */
+/* =============================== */
+
+/* Gomendatua: for-each-a inguratzen duen kontenedorea */
+.taldeak-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+
+
+#tald {
+    display: flex;
+    justify-content:space-around;
+}
+
+.jokalari_kont {
+    background: rgb(71, 129, 174);
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 25px 20px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ====================== PARTIDOAK ====================== */
+
+:root {
+    --primary: #1f3c56;
+    --secondary: #006494;
+    --accent: #00a8e8;
+    --light: #f8fafc;
+    --dark: #2d3748;    
+    --border: #e2e8f0;
+    --shadow: rgba(0, 100, 148, 0.08);
+    --radius: 12px;
+    --win: #2ecc71;
+    --loss: #e74c3c;
+    --draw: #95a5a6;
+}
+
+.partidak-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.partidak-titulua {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 3rem 0 4rem;
+    letter-spacing: -0.8px;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.partidak-titulua::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--secondary), var(--accent));
+    border-radius: 3px;
+}
+
+/* ===== TEMPORADA ===== */
+.denboraldia {
+    background: white;
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.denboraldia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--secondary), var(--accent));
+}
+
+.denboraldia h2 {
+    font-size: 1.9rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid var(--border);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.denboraldia h2 span.urteak {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ===== JORNADA ===== */
+.jardunaldia {
+    margin-bottom: 2.5rem;
+    background: var(--light);
+    border-radius: 10px;
+    padding: 1.8rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.jardunaldia:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 4px 15px rgba(0, 100, 148, 0.1);
+}
+
+.jardunaldia.actual {
+    background: linear-gradient(135deg, rgba(0, 164, 232, 0.03), rgba(0, 100, 148, 0.05));
+    border: 2px solid var(--accent);
+}
+
+.jardunaldia h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.jardunaldia h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 24px;
+    background: linear-gradient(180deg, var(--secondary), var(--accent));
+    border-radius: 3px;
+}
+
+.jardunaldia.actual h3::before {
+    background: linear-gradient(180deg, var(--accent), #00c6ff);
+    width: 6px;
+}
+
+.partida-taulak {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* ===== PARTIDOS ===== */
+.partida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.partida::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--border);
+    transition: all 0.3s ease;
+}
+
+.partida:hover {
+    transform: translateY(-3px);
+    border-color: var(--secondary);
+    box-shadow: 0 6px 20px rgba(0, 100, 148, 0.12);
+}
+
+.partida:hover::before {
+    background: linear-gradient(180deg, var(--secondary), var(--accent));
+}
+
+/* Estados del partido */
+.partida.jugado.ganado::before { background: var(--win); }
+.partida.jugado.perdido::before { background: var(--loss); }
+.partida.jugado.empatado::before { background: var(--draw); }
+
+/* ===== EQUIPOS ===== */
+.taldeak {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    gap: 1rem;
+}
+
+.etxekoa, .kanpokoa {
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    max-width: 45%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.etxekoa {
+    background: rgba(0, 100, 148, 0.05);
+    color: var(--secondary);
+    border: 1px solid rgba(0, 100, 148, 0.15);
+}
+
+.kanpokoa {
+    background: rgba(31, 60, 86, 0.05);
+    color: var(--primary);
+    border: 1px solid rgba(31, 60, 86, 0.15);
+}
+
+.etxekoa::after, .kanpokoa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
+}
+
+.etxekoa:hover::after, .kanpokoa:hover::after {
+    left: 100%;
+}
+
+.vs {
+    margin: 0 1rem;
+    color: #718096;
+    font-weight: 500;
+    font-size: 0.95rem;
+    min-width: 35px;
+    text-align: center;
+    background: var(--light);
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+/* ===== RESULTADO ===== */
+.emaitza {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    min-width: 110px;
+    text-align: center;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+/* Resultado jugado */
+.partida.jugado .emaitza {
+    background: rgba(46, 204, 113, 0.1);
+    color: var(--win);
+    border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+/* Partido ganado */
+.partida.ganado .emaitza {
+    background: rgba(46, 204, 113, 0.15);
+    color: var(--win);
+    border-color: rgba(46, 204, 113, 0.3);
+}
+
+/* Partido perdido */
+.partida.perdido .emaitza {
+    background: rgba(231, 76, 60, 0.1);
+    color: var(--loss);
+    border-color: rgba(231, 76, 60, 0.2);
+}
+
+/* Partido empatado */
+.partida.empatado .emaitza {
+    background: rgba(149, 165, 166, 0.1);
+    color: var(--draw);
+    border-color: rgba(149, 165, 166, 0.2);
+}
+
+/* Partido programado */
+.partida.programado .emaitza {
+    background: rgba(255, 193, 7, 0.08);
+    color: #d4a017;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    font-style: italic;
+}
+
+/* Indicador de estado */
+.estado-partida {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.partida.jugado .estado-partida {
+    background: rgba(46, 204, 113, 0.15);
+    color: var(--win);
+}
+
+.partida.programado .estado-partida {
+    background: rgba(255, 193, 7, 0.15);
+    color: #d4a017;
+}
+
+/* ===== FECHA Y HORA ===== */
+.fecha-partida {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    color: #718096;
+    background: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+/* ===== responsive ===== */
+@media (max-width: 768px) {
+    .partidak-container {
+        padding: 0 1.5rem 3rem;
+    }
+    
+    .partidak-titulua {
+        font-size: 2.2rem;
+        margin: 2rem 0 3rem;
+    }
+    
+    .denboraldia {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .denboraldia h2 {
+        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .jardunaldia {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .jardunaldia h3 {
+        font-size: 1.2rem;
+    }
+    
+    .partida {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.8rem 1.5rem;
+        position: relative;
+    }
+    
+    .partida::before {
+        width: 100%;
+        height: 3px;
+        top: 0;
+        left: 0;
+    }
+    
+    .taldeak {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .etxekoa, .kanpokoa {
+        max-width: 100%;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .vs {
+        order: -1;
+        margin: 0.5rem 0;
+        padding: 0.4rem 1.2rem;
+    }
+    
+    .emaitza {
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .estado-partida {
+        top: 0.8rem;
+        right: 0.8rem;
+    }
+    
+    .fecha-partida {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .partidak-titulua {
+        font-size: 1.9rem;
+        padding-bottom: 1rem;
+    }
+    
+    .partidak-titulua::after {
+        width: 80px;
+        height: 4px;
+    }
+    
+    .denboraldia {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .denboraldia h2 {
+        font-size: 1.4rem;
+    }
+    
+    .jardunaldia h3 {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+    
+    .etxekoa, .kanpokoa {
+        font-size: 1.05rem;
+        padding: 0.9rem;
+    }
+    
+    .emaitza {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mensaje cuando no hay partidos */
+.partida-taulak:empty::before {
+    content: 'Ez dago partidurik erakusteko.';
+    text-align: center;
+    color: #a0aec0;
+    padding: 3rem;
+    display: block;
+    font-style: italic;
+    background: var(--light);
+    border-radius: 10px;
+    border: 2px dashed var(--border);
+}
+
+/* Separador entre jornadas */
+.jardunaldia:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+/* Mejoras tipográficas */
+.etxekoa, .kanpokoa {
+    letter-spacing: 0.2px;
+    font-weight: 600;
+}
+
+.vs {
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Espaciado interno de la tabla */
+.partida-taulak {
+    padding: 0.5rem 0;
+}
+
+
+
