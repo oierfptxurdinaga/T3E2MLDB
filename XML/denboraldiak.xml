@@ -2,7 +2,7 @@
 <?xml-model href="denboraldiak.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <?xml-stylesheet type="text/xsl" href="klasifikazioa.xsl"?>
 <boleibol_federazioa>
-    
+
     <denboraldiak>
         <!-- 2024-2025 DENBORALDIA -->
         <denboraldia>
@@ -18,17 +18,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Miribilla Uhinen Jokoak</kanpokoTaldea>
+                            <kanpokoLogoa>Miribilla Uhinen Jokoak.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Santutxu Haizeak</etxekoTaldea>
+                            <etxekoLogoa>Santutxu Haizeak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>3-2</emaitza>
                         </partida>
                     </partidak>
@@ -40,15 +46,21 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Txurdinaga Harriak</kanpokoTaldea>
+                            <kanpokoLogoa>Txurdinaga Harriak.png</kanpokoLogoa>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                         </partida>
                         <partida>
                             <etxekoTaldea>Usansolo Ortzadak</etxekoTaldea>
+                            <etxekoLogoa>Usansolo Ortzadak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                         </partida>
                     </partidak>
                 </jardunaldia>
@@ -59,15 +71,21 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                         </partida>
                     </partidak>
                 </jardunaldia>
@@ -78,15 +96,21 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                         </partida>
                         <partida>
                             <etxekoTaldea>Usansolo Ortzadak</etxekoTaldea>
+                            <etxekoLogoa>Usansolo Ortzadak.png</etxekoLogoa>
                             <kanpokoTaldea>Miribilla Uhinen Jokoak</kanpokoTaldea>
+                            <kanpokoLogoa>Miribilla Uhinen Jokoak.png</kanpokoLogoa>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                         </partida>
                     </partidak>
                 </jardunaldia>
@@ -97,15 +121,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                         </partida>
+
                         <partida>
                             <etxekoTaldea>Santutxu Haizeak</etxekoTaldea>
+                            <etxekoLogoa>Santutxu Haizeak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                         </partida>
+
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Txurdinaga Harriak</kanpokoTaldea>
+                            <kanpokoLogoa>Txurdinaga Harriak.png</kanpokoLogoa>
                         </partida>
                     </partidak>
                 </jardunaldia>
@@ -198,17 +230,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Miribilla Uhinen Jokoak</kanpokoTaldea>
+                            <kanpokoLogoa>Miribilla Uhinen Jokoak.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Santutxu Haizeak</etxekoTaldea>
+                            <etxekoLogoa>Santutxu Haizeak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>3-2</emaitza>
                         </partida>
                     </partidak>
@@ -220,17 +258,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Txurdinaga Harriak</kanpokoTaldea>
+                            <kanpokoLogoa>Txurdinaga Harriak.png</kanpokoLogoa>
                             <emaitza>2-3</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Usansolo Ortzadak</etxekoTaldea>
+                            <etxekoLogoa>Usansolo Ortzadak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>1-3</emaitza>
                         </partida>
                     </partidak>
@@ -242,17 +286,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>2-3</emaitza>
                         </partida>
                     </partidak>
@@ -264,17 +314,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                             <emaitza>3-2</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Usansolo Ortzadak</etxekoTaldea>
+                            <etxekoLogoa>Usansolo Ortzadak.png</etxekoLogoa>
                             <kanpokoTaldea>Miribilla Uhinen Jokoak</kanpokoTaldea>
+                            <kanpokoLogoa>Miribilla Uhinen Jokoak.png</kanpokoLogoa>
                             <emaitza>0-3</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                     </partidak>
@@ -286,17 +342,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Santutxu Haizeak</etxekoTaldea>
+                            <etxekoLogoa>Santutxu Haizeak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>1-3</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Txurdinaga Harriak</kanpokoTaldea>
+                            <kanpokoLogoa>Txurdinaga Harriak.png</kanpokoLogoa>
                             <emaitza>0-3</emaitza>
                         </partida>
                     </partidak>
@@ -385,17 +447,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Miribilla Uhinen Jokoak</kanpokoTaldea>
+                            <kanpokoLogoa>Miribilla Uhinen Jokoak.png</kanpokoLogoa>
                             <emaitza>3-2</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Santutxu Haizeak</etxekoTaldea>
+                            <etxekoLogoa>Santutxu Haizeak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>2-3</emaitza>
                         </partida>
                     </partidak>
@@ -407,17 +475,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Txurdinaga Harriak</kanpokoTaldea>
+                            <kanpokoLogoa>Txurdinaga Harriak.png</kanpokoLogoa>
                             <emaitza>1-3</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Usansolo Ortzadak</etxekoTaldea>
+                            <etxekoLogoa>Usansolo Ortzadak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>0-3</emaitza>
                         </partida>
                     </partidak>
@@ -429,17 +503,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                             <emaitza>3-2</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>1-3</emaitza>
                         </partida>
                     </partidak>
@@ -451,17 +531,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Santutxu Haizeak</kanpokoTaldea>
+                            <kanpokoLogoa>Santutxu Haizeak.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Usansolo Ortzadak</etxekoTaldea>
+                            <etxekoLogoa>Usansolo Ortzadak.png</etxekoLogoa>
                             <kanpokoTaldea>Miribilla Uhinen Jokoak</kanpokoTaldea>
+                            <kanpokoLogoa>Miribilla Uhinen Jokoak.png</kanpokoLogoa>
                             <emaitza>2-3</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Txurdinaga Harriak</etxekoTaldea>
+                            <etxekoLogoa>Txurdinaga Harriak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>3-0</emaitza>
                         </partida>
                     </partidak>
@@ -473,17 +559,23 @@
                     <partidak>
                         <partida>
                             <etxekoTaldea>Matiko Txirrindulariak</etxekoTaldea>
+                            <etxekoLogoa>Matiko Txirrindulariak.png</etxekoLogoa>
                             <kanpokoTaldea>Otxarkoaga Distira</kanpokoTaldea>
+                            <kanpokoLogoa>Otxarkoaga Distira.png</kanpokoLogoa>
                             <emaitza>3-1</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Santutxu Haizeak</etxekoTaldea>
+                            <etxekoLogoa>Santutxu Haizeak.png</etxekoLogoa>
                             <kanpokoTaldea>Usansolo Ortzadak</kanpokoTaldea>
+                            <kanpokoLogoa>Usansolo Ortzadak.png</kanpokoLogoa>
                             <emaitza>0-3</emaitza>
                         </partida>
                         <partida>
                             <etxekoTaldea>Miribilla Uhinen Jokoak</etxekoTaldea>
+                            <etxekoLogoa>Miribilla Uhinen Jokoak.png</etxekoLogoa>
                             <kanpokoTaldea>Txurdinaga Harriak</kanpokoTaldea>
+                            <kanpokoLogoa>Txurdinaga Harriak.png</kanpokoLogoa>
                             <emaitza>1-3</emaitza>
                         </partida>
                     </partidak>

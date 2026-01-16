@@ -31,7 +31,9 @@
                                                                                 <xs:complexType>
                                                                                     <xs:sequence>
                                                                                         <xs:element name="etxekoTaldea" type="xs:string"/>
+                                                                                        <xs:element name="etxekoLogoa" type="xs:string"/>
                                                                                         <xs:element name="kanpokoTaldea" type="xs:string"/>
+                                                                                        <xs:element name="kanpokoLogoa" type="xs:string"/>
                                                                                         <xs:element name="emaitza" type="xs:string" minOccurs="0"/>
                                                                                     </xs:sequence>
                                                                                 </xs:complexType>
