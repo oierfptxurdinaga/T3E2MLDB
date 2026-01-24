@@ -11,12 +11,12 @@
                 <!-- Denboraldi bakoitzak taula desberdinetan egongo dira -->
                 <xsl:for-each select="boleibol_federazioa/denboraldiak/denboraldia">
 
-                    <!-- Título de la temporada -->
-                    <h2 class="temporada-titulo">
+                    <!-- Denboraldi tituloa -->
+                    <h2 class="denboraldi_titulo">
                         <xsl:value-of select="denboraldiIzena" />
                     </h2>
 
-                    <!-- Tabla de clasificación -->
+                    <!-- Klasifikazio taula-->
                     <div class="tabla-contenedor">
                         <div class="temporada-box">
                             <table class="tabla-klasi">
